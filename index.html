@@ -1,6 +1,5 @@
 # index.html
 
-```html
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -1561,21 +1560,41 @@
             <div class="program-grid">
 
 
-
                 <!-- =================================
-                     PROJECT 01
+                    PROJECT 01
                 ================================= -->
 
                 <a href="https://youtu.be/2IPMO3kLLzk"
                 class="program portfolio-link"
-                target="_blank">
+                target="_blank"
+                rel="noopener noreferrer">
 
 
-                    <div class="program-thumbnail">
-                    <img src="images/썸네일 - 오레오x마다가스크르의펭귄.png"
-                        alt="OREO X PENGUINS OF MADAGASCAR">
+                    <!-- =================================
+                        THUMBNAIL
+                    ================================= -->
+
+                    <div class="program-thumbnail youtube-thumbnail">
+
+                        <img
+                            src="images/썸네일 - 오레오x마다가스크르의펭귄.png"
+                            alt="OREO X PENGUINS OF MADAGASCAR"
+                        >
+
+
+                        <!-- PLAY BUTTON -->
+
+                        <span class="youtube-play-button">
+                            ▶
+                        </span>
+
                     </div>
 
+
+
+                    <!-- =================================
+                        PROJECT INFO
+                    ================================= -->
 
                     <div class="program-info">
 
@@ -1583,11 +1602,11 @@
                         <div class="program-meta">
 
                             <span>
-                                Product Commercial
+                                PRODUCT COMMERCIAL
                             </span>
 
                             <span>
-                            2026.08.26~2026.08.27
+                                2026.08.26~2026.08.27
                             </span>
 
                         </div>
@@ -1597,9 +1616,11 @@
                             OREO X PENGUINS OF MADAGASCAR
                         </h3>
 
+
                         <h5>
                             PHOTOSHOP / AFTER EFFECTS
                         </h5>
+
 
                         <p>
                             본 프로젝트는 전 세계인에게 달콤한 즐거움을 주는 샌드위치 쿠키 브랜드 '오레오(OREO)'와 장난스럽고 역동적인 에너지를 가진 애니메이션 '마다가스카의 펭귄'의 가상 콜라보레이션 광고 영상입니다. 두 브랜드가 공통으로 가진 유쾌함과 통통 튀는 볼륨감이라는 아이덴티티를 시각적으로 극대화하는 것에 초점을 맞추었습니다.
@@ -1607,7 +1628,6 @@
 
 
                     </div>
-
 
                 </a>
 
@@ -1623,7 +1643,7 @@
                     <div class="program-thumbnail">
 
                         <h3>
-                            EDIT
+                            MOTION
                         </h3>
 
                     </div>
@@ -1635,7 +1655,7 @@
                         <div class="program-meta">
 
                             <span>
-                                VIDEO EDIT
+                                MOTION GRAPHIC
                             </span>
 
                             <span>
@@ -1646,12 +1666,12 @@
 
 
                         <h3>
-                            VIDEO EDIT
+                            MOTION GRAPHIC
                         </h3>
 
 
                         <p>
-                            기존 영상을 재구성한 예능 편집 프로젝트
+                            After Effects를 활용한 타이포그래피 프로젝트
                         </p>
 
 
@@ -1659,6 +1679,7 @@
 
 
                 </a>
+
 
 
 
@@ -1759,29 +1780,93 @@
                 </a>
 
 
-               <!-- =================================
-                     PROJECT 05
+
+                <!-- =================================
+                    PROJECT 05
                 ================================= -->
 
-                <a href="#" class="program portfolio-link">
+                <div class="program portfolio-link">
+
+                    <!-- =================================
+                        PORTFOLIO IMAGE SLIDER
+                    ================================= -->
+
+                    <div class="program-thumbnail portfolio-slider">
+
+                        <!-- IMAGE 01 -->
+                        <img
+                            src="images/썸네일 - 우주떡집 (유튜브 썸네일).png"
+                            alt="우주떡집 유튜브 썸네일"
+                            class="portfolio-slide active"
+                        >
+
+                        <!-- IMAGE 02 -->
+                        <img
+                            src="images/썸네일 - 풍향고2(3화 헝가리 미션 임파서블편).png"
+                            alt="풍향고2 유튜브 썸네일"
+                            class="portfolio-slide"
+                        >
 
 
-                    <div class="program-thumbnail">
+                        <!-- =================================
+                            LEFT ARROW
+                        ================================= -->
 
-                        <h3>
-                            AD
-                        </h3>
+                        <button
+                            type="button"
+                            class="slider-arrow slider-prev"
+                            aria-label="이전 이미지"
+                        >
+                            ‹
+                        </button>
+
+
+                        <!-- =================================
+                            RIGHT ARROW
+                        ================================= -->
+
+                        <button
+                            type="button"
+                            class="slider-arrow slider-next"
+                            aria-label="다음 이미지"
+                        >
+                            ›
+                        </button>
+
+
+                        <!-- =================================
+                            IMAGE COUNTER
+                        ================================= -->
+
+                        <div class="slider-counter">
+
+                            <span class="current-slide">
+                                01
+                            </span>
+
+                            <span class="counter-divider">
+                                /
+                            </span>
+
+                            <span class="total-slide">
+                                02
+                            </span>
+
+                        </div>
 
                     </div>
 
 
-                    <div class="program-info">
+                    <!-- =================================
+                        PROJECT INFO
+                    ================================= -->
 
+                    <div class="program-info">
 
                         <div class="program-meta">
 
                             <span>
-                                COMMERCIAL
+                                Youtube Thumbnail
                             </span>
 
                             <span>
@@ -1792,78 +1877,21 @@
 
 
                         <h3>
-                            PRODUCT AD
+                            YOUTUBE THUMBNAIL
                         </h3>
 
+                        <h5>
+                            PHOTOSHOP
+                        </h5>
 
                         <p>
-                            제품의 특징을 시각적으로 표현한 광고 영상
+                            유튜브 콘텐츠의 주제와 핵심 메시지를 한눈에 전달할 수 있도록 제작한 썸네일입니다.<br>
+                            콘텐츠별 분위기와 소재를 고려하여 이미지와 텍스트를 구성하고, 시청자의 클릭을 유도할 수 있는 시각적 요소를 강조했습니다.
                         </p>
-
 
                     </div>
 
-
-                </a>
-
-
-    </section>
-
-
-
-    <!-- =========================================
-         FOOTER
-    ========================================= -->
-
-    <footer>
-
-        <span>
-            JY BROADCAST
-        </span>
-
-        <span>
-            VIDEO CONTENT PRODUCER PORTFOLIO
-        </span>
-
-        <span>
-            © 2026
-        </span>
-
-    </footer>
-
-
-
-    <!-- =========================================
-         REMOTE CONTROL
-    ========================================= -->
-
-    <div class="remote">
-
-
-        <button data-target="#home">
-            HOME
-        </button>
-
-
-        <button data-target="#about">
-            ABOUT
-        </button>
-
-
-        <button data-target="#skills">
-            SKILL
-        </button>
-
-
-        <button data-target="#portfolio">
-            WORK
-        </button>
-
-
-    </div>
-
-
-</div>
+                </div>
 
 
 <!-- JavaScript 연결 -->
