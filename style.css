@@ -1235,34 +1235,105 @@ section {
 }
 
 
+
+
+
+
 /* =========================================================
-   31. CAREER TIMELINE
+   31. CAREER / EXPERIENCE
 ========================================================= */
 
 #career {
     background: #15171b;
 }
 
+
+/* =========================================================
+   CAREER WRAPPER
+========================================================= */
+
+.career-wrapper {
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CAREER SECTION TITLE
+========================================================= */
+
+.career-section {
+    margin-top: 75px;
+}
+
+.career-section:first-of-type {
+    margin-top: 0;
+}
+
+.career-section-header {
+    display: flex;
+    align-items: baseline;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 14px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.15);
+}
+
+.career-section-header span {
+    font-size: 10px;
+
+    letter-spacing: 0.15em;
+
+    color: #777;
+}
+
+.career-section-header h2 {
+    margin: 0;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================================================
+   CAREER TIMELINE
+========================================================= */
+
 .timeline {
     position: relative;
 
-    padding-left: 30px;
+    padding-left: 35px;
 }
+
+
+/* TIMELINE LINE */
 
 .timeline::before {
     content: "";
 
     position: absolute;
 
-    left: 5px;
-    top: 0;
-    bottom: 0;
+    left: 6px;
+    top: 5px;
+    bottom: 5px;
 
     width: 1px;
 
     background:
-        rgba(255, 255, 255, 0.2);
+        rgba(255, 255, 255, 0.18);
 }
+
+
+/* TIMELINE ITEM */
 
 .timeline-item {
     position: relative;
@@ -1270,20 +1341,27 @@ section {
     display: grid;
 
     grid-template-columns:
-        180px
+        170px
         1fr;
 
-    gap: 35px;
+    gap: 40px;
 
-    padding-bottom: 45px;
+    padding-bottom: 50px;
 }
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/* TIMELINE DOT */
 
 .timeline-item::before {
     content: "";
 
     position: absolute;
 
-    left: -29px;
+    left: -33px;
     top: 5px;
 
     width: 9px;
@@ -1298,24 +1376,49 @@ section {
         rgba(255, 255, 255, 0.05);
 }
 
+
+/* =========================================================
+   TIMELINE DATE
+========================================================= */
+
 .timeline-date {
-    padding-top: 3px;
+    padding-top: 2px;
 
-    font-size: 12px;
+    font-size: 11px;
 
-    letter-spacing: 1px;
+    line-height: 1.6;
 
-    opacity: 0.5;
+    letter-spacing: 0.08em;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   TIMELINE CONTENT
+========================================================= */
+
+.timeline-content {
+    min-width: 0;
 }
 
 .timeline-content h3 {
     margin:
-        0 0 8px;
+        0 0 7px;
 
-    font-size: 20px;
+    font-size: 21px;
 
-    letter-spacing: 1px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: -0.02em;
+
+    color: #f5f5f5;
 }
+
+
+/* ROLE */
 
 .timeline-role {
     display: inline-block;
@@ -1327,10 +1430,15 @@ section {
     opacity: 0.55;
 }
 
+
+/* =========================================================
+   CAREER DESCRIPTION
+========================================================= */
+
 .timeline-content ul {
     margin: 0;
 
-    padding-left: 18px;
+    padding-left: 17px;
 }
 
 .timeline-content li {
@@ -1338,14 +1446,84 @@ section {
 
     font-size: 13px;
 
-    line-height: 1.7;
+    line-height: 1.75;
 
-    opacity: 0.7;
+    color: #aaa;
+}
+
+.timeline-content li:last-child {
+    margin-bottom: 0;
 }
 
 
 /* =========================================================
-   32. EDUCATION
+   CAREER HASHTAGS
+   #영상편집 #방송콘텐츠 #AD ...
+========================================================= */
+
+.timeline-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 18px;
+}
+
+
+/* EACH TAG */
+
+.timeline-tags span {
+    display: inline-flex;
+
+    align-items: center;
+
+    min-height: 27px;
+
+    padding:
+        5px 10px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.18);
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    color: #d5d5d5;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    letter-spacing: 0.02em;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+
+/* HOVER */
+
+.timeline-tags span:hover {
+    border-color:
+        rgba(255, 255, 255, 0.45);
+
+    background:
+        rgba(255, 255, 255, 0.09);
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   EDUCATION
 ========================================================= */
 
 .education-grid {
@@ -1358,7 +1536,11 @@ section {
 }
 
 .education-item {
-    padding: 25px;
+    position: relative;
+
+    min-height: 190px;
+
+    padding: 27px;
 
     border:
         1px solid rgba(255, 255, 255, 0.12);
@@ -1366,7 +1548,10 @@ section {
     background:
         rgba(255, 255, 255, 0.025);
 
-    transition: 0.3s;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
 }
 
 .education-item:hover {
@@ -1375,39 +1560,102 @@ section {
 
     border-color:
         rgba(255, 255, 255, 0.3);
+
+    background:
+        rgba(255, 255, 255, 0.045);
 }
+
+
+/* YEAR */
 
 .education-year {
     display: block;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
-    font-size: 11px;
+    font-size: 10px;
 
-    opacity: 0.45;
+    letter-spacing: 0.12em;
+
+    color: #777;
 }
+
+
+/* SCHOOL */
 
 .education-item h3 {
     margin:
         0 0 8px;
 
-    font-size: 18px;
+    font-size: 19px;
+
+    line-height: 1.4;
+
+    color: #eee;
 }
+
+
+/* MAJOR */
 
 .education-item p {
-    margin:
-        0 0 6px;
+    margin: 0 0 7px;
 
-    font-size: 14px;
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #aaa;
 }
 
+
+/* ADDITIONAL INFO */
+
 .education-item small {
-    opacity: 0.45;
+    display: block;
+
+    margin-top: 12px;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    color: #666;
 }
 
 
 /* =========================================================
-   33. TRAINING & ACTIVITIES
+   EDUCATION HASHTAGS
+========================================================= */
+
+.education-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: 18px;
+}
+
+.education-tags span {
+    display: inline-block;
+
+    padding:
+        5px 8px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.14);
+
+    color: #999;
+
+    font-size: 9px;
+
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================================================
+   TRAINING / ACTIVITIES
 ========================================================= */
 
 .activity-list {
@@ -1416,59 +1664,117 @@ section {
     flex-direction: column;
 
     gap: 1px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.12);
 }
 
 .activity-item {
     display: grid;
 
     grid-template-columns:
-        180px
+        170px
         1fr;
 
-    gap: 30px;
+    gap: 35px;
 
-    padding: 25px;
+    padding: 24px 0;
 
-    border:
-        1px solid rgba(255, 255, 255, 0.08);
-
-    background:
-        rgba(255, 255, 255, 0.025);
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.1);
 }
+
+
+/* DATE */
 
 .activity-date {
-    font-size: 11px;
+    font-size: 10px;
 
-    letter-spacing: 1px;
+    line-height: 1.6;
 
-    opacity: 0.45;
+    letter-spacing: 0.08em;
+
+    color: #666;
 }
+
+
+/* TITLE */
 
 .activity-item h3 {
     margin:
         0 0 7px;
 
     font-size: 17px;
+
+    line-height: 1.4;
+
+    color: #eee;
 }
+
+
+/* DESCRIPTION */
 
 .activity-item p {
     margin:
-        0 0 8px;
+        0 0 10px;
 
-    font-size: 14px;
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #aaa;
 }
 
+
+/* ADDITIONAL */
+
 .activity-item span {
-    font-size: 12px;
+    display: block;
+
+    font-size: 11px;
 
     line-height: 1.6;
 
-    opacity: 0.5;
+    color: #666;
 }
 
 
 /* =========================================================
-   34. CERTIFICATES
+   ACTIVITY HASHTAGS
+========================================================= */
+
+.activity-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 14px;
+}
+
+.activity-tags span {
+    display: inline-block;
+
+    padding:
+        5px 9px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.16);
+
+    background:
+        rgba(255, 255, 255, 0.025);
+
+    font-size: 9px;
+
+    color: #aaa;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CERTIFICATES
 ========================================================= */
 
 .certificate-grid {
@@ -1485,7 +1791,9 @@ section {
 
     flex-direction: column;
 
-    gap: 8px;
+    justify-content: space-between;
+
+    min-height: 150px;
 
     padding: 22px;
 
@@ -1494,25 +1802,305 @@ section {
 
     background:
         rgba(255, 255, 255, 0.025);
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
 }
+
+.certificate-item:hover {
+    border-color:
+        rgba(255, 255, 255, 0.28);
+
+    background:
+        rgba(255, 255, 255, 0.045);
+}
+
+
+/* CERTIFICATE TYPE */
 
 .certificate-item span {
-    font-size: 10px;
+    font-size: 9px;
 
-    opacity: 0.4;
+    letter-spacing: 0.12em;
+
+    color: #666;
 }
 
+
+/* CERTIFICATE NAME */
+
 .certificate-item strong {
+    margin-top: 25px;
+
     font-size: 14px;
 
     line-height: 1.5;
+
+    color: #eee;
 }
+
+
+/* DATE / ISSUER */
 
 .certificate-item small {
-    font-size: 10px;
+    margin-top: 15px;
 
-    opacity: 0.45;
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    color: #666;
 }
+
+
+/* =========================================================
+   CAREER KEYWORD EMPHASIS
+========================================================= */
+
+.career-keyword {
+    color: #fff;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CAREER HIGHLIGHT
+========================================================= */
+
+.career-highlight {
+    color: #fff;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CAREER RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .career-wrapper {
+        width: 100%;
+    }
+
+    .timeline-item {
+        grid-template-columns:
+            120px
+            1fr;
+
+        gap: 25px;
+    }
+
+    .education-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .activity-item {
+        grid-template-columns:
+            120px
+            1fr;
+
+        gap: 25px;
+    }
+
+    .certificate-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /* -----------------------------------------------------
+       CAREER
+    ----------------------------------------------------- */
+
+    .career-section {
+        margin-top: 55px;
+    }
+
+    .career-section-header {
+        gap: 10px;
+
+        margin-bottom: 25px;
+    }
+
+    .career-section-header span {
+        font-size: 8px;
+    }
+
+    .career-section-header h2 {
+        font-size: 21px;
+    }
+
+
+    /* -----------------------------------------------------
+       TIMELINE
+    ----------------------------------------------------- */
+
+    .timeline {
+        padding-left: 25px;
+    }
+
+    .timeline::before {
+        left: 4px;
+    }
+
+    .timeline-item {
+        grid-template-columns:
+            1fr;
+
+        gap: 7px;
+
+        padding-bottom: 40px;
+    }
+
+    .timeline-item::before {
+        left: -25px;
+
+        width: 8px;
+        height: 8px;
+    }
+
+    .timeline-date {
+        padding: 0;
+
+        font-size: 9px;
+
+        color: #666;
+    }
+
+    .timeline-content h3 {
+        font-size: 18px;
+    }
+
+    .timeline-role {
+        margin-bottom: 12px;
+
+        font-size: 9px;
+    }
+
+    .timeline-content li {
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------------------
+       HASHTAGS
+    ----------------------------------------------------- */
+
+    .timeline-tags {
+        gap: 6px;
+
+        margin-top: 15px;
+    }
+
+    .timeline-tags span {
+        min-height: 25px;
+
+        padding:
+            5px 8px;
+
+        font-size: 9px;
+    }
+
+
+    /* -----------------------------------------------------
+       EDUCATION
+    ----------------------------------------------------- */
+
+    .education-item {
+        min-height: auto;
+
+        padding: 22px;
+    }
+
+    .education-year {
+        margin-bottom: 15px;
+    }
+
+    .education-item h3 {
+        font-size: 17px;
+    }
+
+    .education-item p {
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       ACTIVITIES
+    ----------------------------------------------------- */
+
+    .activity-item {
+        grid-template-columns:
+            1fr;
+
+        gap: 8px;
+
+        padding: 20px 0;
+    }
+
+    .activity-date {
+        font-size: 9px;
+    }
+
+    .activity-item h3 {
+        font-size: 16px;
+    }
+
+    .activity-item p {
+        font-size: 12px;
+    }
+
+    .activity-tags {
+        gap: 5px;
+    }
+
+    .activity-tags span {
+        font-size: 8px;
+
+        padding:
+            5px 7px;
+    }
+
+
+    /* -----------------------------------------------------
+       CERTIFICATES
+    ----------------------------------------------------- */
+
+    .certificate-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .certificate-item {
+        min-height: 130px;
+
+        padding: 20px;
+    }
+
+    .certificate-item strong {
+        margin-top: 20px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+
+
 
 
 /* =========================================================
