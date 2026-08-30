@@ -1,0 +1,88 @@
+/* =========================================================
+   COVER.CSS
+   JY BROADCAST - PORTFOLIO
+   cover.html (COVER LETTER 페이지) 전용 스타일
+   ※ header/nav/footer/section 공통 스타일은 common.css 참고
+========================================================= */
+
+
+/* =========================================================
+   30. COVER LETTER
+========================================================= */
+
+#cover {
+    background: #0f1013;
+}
+
+.cover-wrapper {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.program-sheet {
+    border-top:
+        2px solid #eee;
+}
+
+.cover-row {
+    display: grid;
+
+    grid-template-columns:
+        220px
+        1fr;
+
+    gap: 50px;
+
+    padding: 40px 0;
+
+    border-bottom:
+        1px solid #303238;
+}
+
+.cover-question {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+.cover-question small {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #666;
+}
+
+.cover-answer {
+    font-size: 14px;
+
+    line-height: 2;
+
+    color: #999;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE (max-width: 900px)
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .cover-row {
+        grid-template-columns:
+            1fr;
+
+        gap: 15px;
+
+        padding:
+            30px 0;
+    }
+
+}

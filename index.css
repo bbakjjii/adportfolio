@@ -1,0 +1,288 @@
+/* =========================================================
+   INDEX.CSS
+   JY BROADCAST - PORTFOLIO
+   index.html (ABOUT ME 페이지) 전용 스타일
+   - 프로필 카드 / 기본정보 / PRODUCER NOTE / SKILLS
+   ※ header/nav/footer/section 공통 스타일, about-wrapper,
+     about-section 은 common.css 참고
+========================================================= */
+
+
+/* =========================================================
+   08. ABOUT
+========================================================= */
+
+#about {
+    background: #15171b;
+}
+
+
+/* =========================================================
+   09. PROFILE CARD
+========================================================= */
+
+.broadcast-card {
+    display: grid;
+
+    grid-template-columns:
+        300px
+        1fr;
+
+    min-height: 420px;
+
+    border: 1px solid #34363b;
+
+    background: #101114;
+}
+
+.profile {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 25px;
+
+    border-right: 1px solid #34363b;
+}
+
+.profile-photo {
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #292b30;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.profile-card {
+    margin-bottom: 60px;
+}
+
+
+/* =========================================================
+   10. BASIC INFORMATION
+========================================================= */
+
+.broadcast-info {
+    padding: 40px;
+}
+
+.info-row {
+    display: grid;
+
+    grid-template-columns:
+        150px
+        1fr;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #2b2d32;
+}
+
+.info-label {
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    color: #666;
+}
+
+.info-content {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #ddd;
+}
+
+
+/* =========================================================
+   12. PRODUCER NOTE
+========================================================= */
+
+.about-intro {
+    margin-top: 20px;
+}
+
+.intro-text {
+    max-width: 850px;
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    color: #aaa;
+}
+
+.intro-text p + p {
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   13. SKILLS
+========================================================= */
+
+.skill-console {
+    padding: 35px;
+
+    border: 1px solid #37393e;
+
+    background: #101114;
+}
+
+.console-header {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid #333;
+
+    font-size: 11px;
+
+    color: #777;
+}
+
+.skill-item {
+    display: grid;
+
+    grid-template-columns:
+        180px
+        1fr
+        70px;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skill-name {
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.signal {
+    height: 12px;
+
+    display: flex;
+
+    gap: 3px;
+}
+
+.signal span {
+    flex: 1;
+
+    background: #333;
+}
+
+.signal span.active {
+    background: #eee;
+}
+
+.skill-level {
+    text-align: right;
+
+    font-size: 11px;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE (max-width: 900px)
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* ABOUT */
+
+    .broadcast-card {
+        grid-template-columns:
+            1fr;
+    }
+
+    .profile {
+        border-right: none;
+
+        border-bottom:
+            1px solid #34363b;
+    }
+
+    .profile-photo {
+        max-width: 200px;
+    }
+
+    .broadcast-info {
+        padding: 25px;
+    }
+
+    .info-row {
+        grid-template-columns:
+            100px
+            1fr;
+    }
+
+
+    /* SKILLS */
+
+    .skill-item {
+        grid-template-columns:
+            110px
+            1fr
+            45px;
+
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE RESPONSIVE (max-width: 600px)
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* SKILLS */
+
+    .skill-console {
+        padding: 20px;
+    }
+
+    .console-header {
+        font-size: 9px;
+    }
+
+    .skill-name {
+        font-size: 10px;
+    }
+
+    .skill-level {
+        font-size: 9px;
+    }
+
+}
