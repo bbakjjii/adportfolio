@@ -5254,3 +5254,322 @@ footer {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   SHELTER PROPOSAL PAGE STYLES (헤더-본문-푸터 자연스러운 조화 & 파스텔 디자인)
+   ========================================================================== */
+
+/* 1. 헤더/푸터와 자연스럽게 어우러지는 외각 배경 및 상단 여백 */
+.proposal-wrapper {
+    width: 100%;
+    padding-top: 120px !important;
+    padding-bottom: 60px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff; /* 전체 배경을 깔끔한 화이트로 통합 */
+    min-height: calc(100vh - 120px);
+}
+
+/* 2. 밝고 선명한 화이트/파스텔 본문 컨테이너 카드 */
+.proposal-container {
+    max-width: 900px;
+    width: 100%;
+    background: transparent; /* 카드 배경 제거 */
+    padding: 0;               /* 카드 내부 패딩 제거 */
+    border-radius: 0;         /* 둥근 모서리 제거 */
+    box-shadow: none;         /* 그림자 효과 제거 */
+    border: none;             /* 테두리 제거 */
+    color: #1a1a1a;
+}
+
+/* 3. 문서 헤더 (타이틀 및 버전 태그) */
+.proposal-container .doc-header {
+    border-bottom: 2px solid #2e7d32;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+}
+
+.proposal-container .doc-title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #111111;
+    line-height: 1.25;
+    margin-bottom: 6px;
+}
+
+.proposal-container .doc-subtitle {
+    font-size: 1.05rem;
+    color: #2e7d32;
+    font-weight: 700;
+}
+
+/* 4. 섹션 및 타이틀 (여백 최적화) */
+.proposal-section {
+    margin-bottom: 24px !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
+    height: auto !important;
+}
+
+.proposal-section p {
+    font-size: 0.98rem;
+    color: #222222;
+    line-height: 1.6;
+}
+
+.proposal-section .section-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #0f3811;
+    border-left: 4px solid #2e7d32;
+    padding-left: 10px;
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+    padding-top: 0 !important;
+}
+
+/* 5. 파스텔 강조 박스 */
+.proposal-container .quote-box {
+    background: #f1f8e9;
+    border-left: 4px solid #4caf50;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1b5e20;
+    border-radius: 0 10px 10px 0;
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+    padding: 14px 18px !important;
+}
+
+/* 6. 표(Table) 스타일 */
+.proposal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    background: #ffffff;
+}
+
+.proposal-table th, 
+.proposal-table td {
+    border: 1px solid #dcdcdc;
+    padding: 10px 14px;
+    text-align: left;
+    color: #1a1a1a;
+}
+
+.proposal-table th {
+    background-color: #f4f9f4;
+    color: #1b5e20;
+    font-weight: 800;
+}
+
+/* 7. 카드 및 나러티브 플로우 */
+.proposal-container .device-card {
+    background: #f8faf8;
+    border: 1px solid #c8e6c9;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-top: 8px;
+}
+
+.proposal-container .device-card h4 {
+    color: #1b5e20;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.proposal-container .device-card p {
+    color: #111111;
+    font-weight: 500;
+}
+
+.proposal-container .device-card ul {
+    margin-top: 8px;
+    padding-left: 18px;
+    color: #111111;
+    line-height: 1.7;
+}
+
+.proposal-container .device-card ul li {
+    font-size: 0.95rem;
+}
+
+.proposal-container .device-card ul strong {
+    color: #1b5e20;
+}
+
+.proposal-container .narrative-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9fbf9;
+    border: 1px solid #d0e7d2;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-weight: 800;
+    color: #1b5e20;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.proposal-container .narrative-flow span {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.92rem;
+}
+
+.proposal-container .narrative-flow .arrow {
+    color: #757575;
+    font-weight: 600;
+}
+
+/* 8. 타임라인 & 원칙 목록 */
+.proposal-container .day-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #2e7d32;
+    border-radius: 8px;
+    padding: 12px 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    margin-bottom: 12px;
+}
+
+.proposal-container .day-card strong {
+    display: block;
+    color: #1b5e20;
+    font-size: 0.88rem;
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+
+.proposal-container .day-card span {
+    font-weight: 700;
+    color: #111111;
+    font-size: 0.92rem;
+}
+
+.proposal-container .principles-list {
+    padding-left: 18px;
+    line-height: 1.7;
+    color: #111111;
+}
+
+.proposal-container .principles-list li {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+/* 10. 스토리보드 그리드 & 카드 (신규 추가) */
+.roadmap-stage {
+    margin-bottom: 24px;
+}
+
+.storyboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.storyboard-card {
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.storyboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.storyboard-card .img-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #f4f9f4;
+    overflow: hidden;
+}
+
+.storyboard-card .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.storyboard-card .cut-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(46, 125, 50, 0.9);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.storyboard-card .card-desc {
+    padding: 12px;
+}
+
+.storyboard-card .card-desc strong {
+    display: block;
+    font-size: 0.92rem;
+    color: #0f3811;
+    margin-bottom: 4px;
+}
+
+.storyboard-card .card-desc p {
+    font-size: 0.85rem;
+    color: #555555;
+    line-height: 1.4;
+}
+
+/* 9. 모바일 반응형 처리 */
+@media (max-width: 768px) {
+    .proposal-wrapper {
+        padding-top: 100px !important;
+        padding-bottom: 30px !important;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .proposal-container {
+        padding: 20px 14px;
+    }
+
+    .proposal-container .doc-title {
+        font-size: 1.6rem;
+    }
+
+    .proposal-container .narrative-flow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .proposal-container .narrative-flow .arrow {
+        display: none;
+    }
+
+    /* 모바일에서는 스토리보드 1열로 변경 */
+    .storyboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
