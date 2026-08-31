@@ -1,1127 +1,964 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 
 <head>
 
-    <!-- =========================================
-         DOCUMENT SETTINGS
-         문서 기본 설정
-    ========================================== -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- =========================================
+     DOCUMENT SETTINGS
+========================================== -->
 
-    <title>JY BROADCAST - PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="portfolio.css">
+<title>JY BROADCAST - PORTFOLIO</title>
+
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="portfolio.css">
+
 
 </head>
-
 
 <body>
 
 
-    <!-- =========================================
-         HEADER
-         사이트 상단 영역
-    ========================================== -->
+<!-- =========================================
+     HEADER
+========================================== -->
 
-    <header>
+<header>
 
+    <a href="index.html" class="station-logo">
 
-        <!-- -----------------------------------------
-             STATION LOGO
-             왼쪽 방송국 로고
-        ------------------------------------------ -->
-
-        <a href="index.html" class="station-logo">
-
-            <div class="station-icon">
-                TV
-            </div>
-
-            JY BROADCAST
-
-        </a>
-
-
-        <!-- -----------------------------------------
-             ON AIR INDICATOR
-             ON AIR 상태 표시
-        ------------------------------------------ -->
-
-        <div class="on-air">
-
-            <div class="on-air-dot"></div>
-
-            ON AIR
-
+        <div class="station-icon">
+            TV
         </div>
 
+        JY BROADCAST
 
-        <!-- -----------------------------------------
-             MAIN NAVIGATION
-             상단 메뉴
-        ------------------------------------------ -->
-
-         <nav>
-            <a href="index.html">ABOUT ME</a>
-            <a href="portfolio.html" class="active">PORTFOLIO</a>
-            <a href="cover.html">COVER LETTER</a>
-            <a href="career.html">EDUCATION & CAREER</a>
-        </nav>
+    </a>
 
 
-    </header>
+    <div class="on-air">
+
+        <div class="on-air-dot"></div>
+
+        ON AIR
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            ABOUT ME
+        </a>
+
+        <a href="portfolio.html" class="active">
+            PORTFOLIO
+        </a>
+
+        <a href="cover.html">
+            COVER LETTER
+        </a>
+
+        <a href="career.html">
+            EDUCATION & CAREER
+        </a>
+
+    </nav>
+
+</header>
 
 
 
-    <!-- =========================================
-         PORTFOLIO SECTION
-         포트폴리오 전체 영역
-    ========================================== -->
+<!-- =========================================
+     PORTFOLIO
+========================================== -->
 
-    <section id="portfolio">
+<section id="portfolio">
+
+
+    <div class="portfolio-wrapper">
+
+
+        <span class="section-label">
+            CH. 02 / PROGRAM ARCHIVE
+        </span>
+
+
+        <h1 class="section-title">
+            PORTFOLIO
+        </h1>
+
 
 
         <!-- =========================================
-             PORTFOLIO WRAPPER
-             전체 콘텐츠 컨테이너
+             PORTFOLIO LAYOUT
         ========================================== -->
 
-        <div class="portfolio-wrapper">
-
-
-            <!-- -----------------------------------------
-                 SECTION LABEL
-                 챕터 / 섹션 번호
-            ------------------------------------------ -->
-
-            <span class="section-label">
-                CH. 02 / PROGRAM ARCHIVE
-            </span>
-
-
-            <!-- -----------------------------------------
-                 SECTION TITLE
-                 페이지 제목
-            ------------------------------------------ -->
-
-            <h1 class="section-title">
-                PORTFOLIO
-            </h1>
+        <div class="portfolio-layout">
 
 
 
             <!-- =========================================
-                 PORTFOLIO LAYOUT
-                 왼쪽 메뉴 + 오른쪽 프로젝트 영역
+                 PORTFOLIO MENU
             ========================================== -->
 
-            <div class="portfolio-layout">
+            <aside class="portfolio-menu">
+
+
+                <div class="portfolio-menu-header">
+
+                    <span>
+                        PROGRAM MENU
+                    </span>
+
+                    <span>
+                        SELECT
+                    </span>
+
+                </div>
 
 
 
-                <!-- =========================================
-                     PORTFOLIO MENU
-                     왼쪽 카테고리 메뉴
-                ========================================== -->
+                <!-- ALL -->
 
-                <aside class="portfolio-menu">
+                <button
+                    type="button"
+                    class="portfolio-category active"
+                    data-category="all"
+                >
+
+                    <span class="category-number">
+                        01
+                    </span>
+
+                    <span class="category-name">
+                        전체
+                    </span>
+
+                </button>
 
 
-                    <!-- -----------------------------------------
-                         MENU HEADER
-                    ------------------------------------------ -->
 
-                    <div class="portfolio-menu-header">
+                <!-- CONTENT PLANNING -->
 
-                        <span>PROGRAM MENU</span>
+                <button
+                    type="button"
+                    class="portfolio-category"
+                    data-category="planning"
+                >
 
-                        <span>SELECT</span>
+                    <span class="category-number">
+                        02
+                    </span>
+
+                    <span class="category-name">
+                        콘텐츠 기획
+                    </span>
+
+                </button>
+
+
+
+                <!-- VIDEO EDITING -->
+
+                <button
+                    type="button"
+                    class="portfolio-category"
+                    data-category="editing"
+                >
+
+                    <span class="category-number">
+                        03
+                    </span>
+
+                    <span class="category-name">
+                        영상 편집
+                    </span>
+
+                </button>
+
+
+
+                <!-- MOTION GRAPHIC -->
+
+                <button
+                    type="button"
+                    class="portfolio-category"
+                    data-category="motion"
+                >
+
+                    <span class="category-number">
+                        04
+                    </span>
+
+                    <span class="category-name">
+                        모션그래픽
+                    </span>
+
+                </button>
+
+
+
+                <!-- 2D DESIGN -->
+
+                <button
+                    type="button"
+                    class="portfolio-category"
+                    data-category="design"
+                >
+
+                    <span class="category-number">
+                        05
+                    </span>
+
+                    <span class="category-name">
+                        2D 디자인
+                    </span>
+
+                </button>
+
+
+
+                <div class="portfolio-menu-footer">
+
+                    <span>
+                        JY BROADCAST
+                    </span>
+
+                    <span>
+                        2026
+                    </span>
+
+                </div>
+
+
+            </aside>
+
+
+
+            <!-- =========================================
+                 PROJECT AREA
+            ========================================== -->
+
+            <div class="portfolio-project-area">
+
+
+
+                <!-- PROJECT HEADER -->
+
+                <div class="portfolio-project-header">
+
+
+                    <div>
+
+                        <span class="portfolio-current-label">
+                            PROGRAM / ALL
+                        </span>
+
+                        <h2 class="portfolio-current-title">
+                            ALL PROJECTS
+                        </h2>
 
                     </div>
 
 
-
-                    <!-- =========================================
-                         CATEGORY 01
-                         ALL
-                         전체 프로젝트
-                    ========================================== -->
-
-                    <button
-                        type="button"
-                        class="portfolio-category active"
-                        data-category="all"
-                    >
-
-                        <span class="category-number">
-                            01
-                        </span>
-
-                        <span class="category-name">
-                            ALL
-                        </span>
-
-                    </button>
-
-
-
-                    <!-- =========================================
-                         CATEGORY 02
-                         COMMERCIAL
-                         제품 광고
-                    ========================================== -->
-
-                    <button
-                        type="button"
-                        class="portfolio-category"
-                        data-category="commercial"
-                    >
-
-                        <span class="category-number">
-                            02
-                        </span>
-
-                        <span class="category-name">
-                            제품광고
-                        </span>
-
-                    </button>
-
-
-
-                    <!-- =========================================
-                         CATEGORY 03
-                         ENTERTAINMENT
-                         엔터테인먼트 기획안
-                    ========================================== -->
-
-                    <button
-                        type="button"
-                        class="portfolio-category"
-                        data-category="entertainment"
-                    >
-
-                        <span class="category-number">
-                            03
-                        </span>
-
-                        <span class="category-name">
-                            콘텐츠 제작 기획안
-                        </span>
-
-                    </button>
-
-
-
-                    <!-- =========================================
-                         CATEGORY 04
-                         MOTION
-                         모션그래픽
-                    ========================================== -->
-
-                    <button
-                        type="button"
-                        class="portfolio-category"
-                        data-category="motion"
-                    >
-
-                        <span class="category-number">
-                            04
-                        </span>
-
-                        <span class="category-name">
-                            모션그래픽
-                        </span>
-
-                    </button>
-
-
-
-                    <!-- =========================================
-                         CATEGORY 05
-                         THUMBNAIL
-                         유튜브 썸네일
-                    ========================================== -->
-
-                    <button
-                        type="button"
-                        class="portfolio-category"
-                        data-category="thumbnail"
-                    >
-
-                        <span class="category-number">
-                            05
-                        </span>
-
-                        <span class="category-name">
-                            유튜브 썸네일
-                        </span>
-
-                    </button>
-
-
-
-                    <!-- -----------------------------------------
-                         MENU FOOTER
-                         메뉴 하단 정보
-                    ------------------------------------------ -->
-
-                    <div class="portfolio-menu-footer">
+                    <div class="portfolio-project-count">
 
                         <span>
-                            JY BROADCAST
+                            PROJECT
                         </span>
 
-                        <span>
-                            2026
-                        </span>
-
-                    </div>
-
-
-                </aside>
-
-
-
-                <!-- =========================================
-                     PROJECT AREA
-                     오른쪽 프로젝트 콘텐츠 영역
-                ========================================== -->
-
-                <div class="portfolio-project-area">
-
-
-
-                    <!-- =========================================
-                         PROJECT HEADER
-                         현재 카테고리 + 프로젝트 개수
-                    ========================================== -->
-
-                    <div class="portfolio-project-header">
-
-
-                        <!-- -----------------------------------------
-                             CURRENT CATEGORY
-                             현재 선택된 카테고리
-                        ------------------------------------------ -->
-
-                        <div>
-
-                            <span class="portfolio-current-label">
-                                PROGRAM / ALL
-                            </span>
-
-                            <h2 class="portfolio-current-title">
-                                ALL PROJECTS
-                            </h2>
-
-                        </div>
-
-
-                        <!-- -----------------------------------------
-                             PROJECT COUNT
-                             현재 프로젝트 개수
-
-                             ★ 프로젝트를 추가/삭제하면
-                             JavaScript가 자동으로 계산합니다.
-                        ------------------------------------------ -->
-
-                        <div class="portfolio-project-count">
-
-                            <span>
-                                PROJECT
-                            </span>
-
-                            <strong id="project-count">
-                                05
-                            </strong>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <!-- =====================================================
-                         PROGRAM GRID
-                         프로젝트 카드가 표시되는 영역
-
-                         ★★★ 작업물 추가 / 삭제는 여기서 합니다 ★★★
-
-                         [작업물 추가]
-                         아래 PROJECT 카드를 통째로 복사하여
-                         원하는 위치에 붙여넣습니다.
-
-                         [작업물 삭제]
-                         삭제할 PROJECT 카드 전체를
-                         시작 태그부터 끝 태그까지 삭제합니다.
-
-                         [중요]
-                         프로젝트를 추가/삭제할 때
-                         JavaScript는 수정할 필요가 없습니다.
-
-                         프로젝트 개수는 JavaScript가
-                         .program 요소를 자동으로 계산합니다.
-                    ====================================================== -->
-
-                    <div class="program-grid">
-
-
-
-                        <!-- =================================================
-                             ★ 작업물 추가 시:
-                             이 카드 전체를 복사해서 아래에 붙여넣은 후
-                             이미지 / 제목 / 설명 / 링크 등을 수정합니다.
-                        ================================================== -->
-
-
-
-
-                        <!-- =================================================
-                             PROJECT 05
-                             ENTERTAINMENT PROPOSAL
-                             엔터테인먼트 기획안
-                        ================================================== -->
-
-                        <a
-                            href="seventeen.html"
-                            class="program portfolio-link"
-                            data-category="entertainment"
-                        >
-
-
-                            <!-- PROJECT THUMBNAIL -->
-
-                            <div class="program-thumbnail">
-
-                                <img src="images/seventeen/seventeen_1.png" alt="SEVENTEEN ARTIST CONTENT PROJECT" > 
-
-                            </div>
-
-
-                            <!-- PROJECT INFORMATION -->
-
-                            <div class="program-info">
-
-
-                                <div class="program-meta">
-
-                                    <span>
-                                        ARTIST VIDEO CONTENT PROPOSAL
-                                    </span>
-
-                                    <span>
-                                        2026.08.29
-                                    </span>
-
-                                </div>
-
-
-                                <h2>
-                                    SEVENTEEN × LOGIN
-                                </h2>
-
-
-                                <h5>
-                                    CONTENT PLANNING
-                                </h5>
-
-
-                                <p>
-
-                                    SEVENTEEN의 자체 콘텐츠를 RPG 게임의 구조로 재해석한 게이미피케이션 여행 예능 기획안.
-                                    멤버들은 하나의 길드가 되어 매회 새로운 파티를 구성하고, 여행 과정에서 퀘스트를 수행해 골드를 획득한다.
-                                    획득한 GOLD로 이동, 식사, 숙박 등의 여행 비용을 직접 해결하며, 한정된 자원을 어떻게 벌고 사용할지 멤버 스스로 선택한다.
-                                    회차별 GOLD의 일부는 길드금고에 누적되어 시즌 전체의 자산으로 이어진다.
-                                    이를 통해 매회 새로운 멤버 조합과 여행뿐 아니라, 누적되는 골드와 선택의 결과가 다음 이야기를 만들어가는 구조를 설계했다.
-
-                                </p>
-
-
-                            </div>
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <!-- =================================================
-                            PROJECT 06
-                            ENTERTAINMENT PROPOSAL
-                            멍멍안녕 기획안
-                        ================================================== -->
-
-                        <a
-                            href="shelter-proposal.html"
-                            class="program portfolio-link"
-                            data-category="entertainment"
-                        >
-
-
-                            <!-- PROJECT THUMBNAIL -->
-
-                            <div class="program-thumbnail">
-
-                                <img src="images/멍멍안녕/멍멍! 안녕! 타이틀 로고.png" alt="열흘만 출근하겠습니다 PROPOSAL PROJECT" > 
-
-                            </div>
-
-
-                            <!-- PROJECT INFORMATION -->
-
-                            <div class="program-info">
-
-
-                                <div class="program-meta">
-
-                                    <span>
-                                        OBSERVATIONAL REALITY SHOW
-                                    </span>
-
-                                    <span>
-                                        2026.08.30
-                                    </span>
-
-                                </div>
-
-
-                                <h2>
-                                    멍멍! 안녕!
-                                </h2>
-
-
-                                <h5>
-                                    CONTENT PLANNING
-                                </h5>
-
-
-                                <p>
-
-                                    여성 연예인 4인이 유기견 보호소에서 10일간 밀착 상주하며 현장 봉사와 공동생활을 펼치는 관찰형 리얼리티 예능 기획안.
-                                    베테랑 봉사자와 비반려인 초보 일꾼이 함께 성장해 나가는 진솔한 서사와 함께 10일간의 회차별 로드맵 및 비주얼 스토리보드를 종합적으로 구축했다.
-                                    이를 통해 단순한 봉사나 감동 소구를 넘어, '우리가 동물을 바라보는 방식의 변화'를 보여주는 입체적인 서사를 설계했다.
-
-                                </p>
-
-
-                            </div>
-
-
-                        </a>
-
-
-
-                        <!-- =================================================
-                             PROJECT 01
-                             OREO X PENGUINS OF MADAGASCAR
-                             제품 광고
-
-                             ★ 작업물 추가 시:
-                             이 카드 전체를 복사해서 아래에 붙여넣은 후
-                             이미지 / 제목 / 설명 / 링크 등을 수정합니다.
-                        ================================================== -->
-
-                        <a
-                            href="https://youtu.be/2IPMO3kLLzk"
-                            class="program portfolio-link"
-                            data-category="commercial"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-
-                            <!-- PROJECT THUMBNAIL -->
-
-                            <div class="program-thumbnail youtube-thumbnail">
-
-                                <img
-                                    src="images/제품광고/썸네일 - 오레오x마다가스크르의펭귄.png"
-                                    alt="OREO X PENGUINS OF MADAGASCAR"
-                                >
-
-                                <!-- YouTube 재생 버튼 -->
-
-                                <span class="youtube-play-button">
-                                    ▶
-                                </span>
-
-                            </div>
-
-
-
-                            <!-- PROJECT INFORMATION -->
-
-                            <div class="program-info">
-
-
-                                <!-- 프로젝트 메타 정보 -->
-
-                                <div class="program-meta">
-
-                                    <span>
-                                        PRODUCT COMMERCIAL
-                                    </span>
-
-                                    <span>
-                                        2026.08.26 — 2026.08.27
-                                    </span>
-
-                                </div>
-
-
-                                <!-- 프로젝트 제목 -->
-
-                                <h2>
-                                    OREO X PENGUINS OF MADAGASCAR
-                                </h2>
-
-
-                                <!-- 사용 프로그램 -->
-
-                                <h5>
-                                    PHOTOSHOP / AFTER EFFECTS
-                                </h5>
-
-
-                                <!-- 프로젝트 설명 -->
-
-                                <p>
-                                    전 세계인에게 달콤한 즐거움을 주는 샌드위치 쿠키 브랜드
-                                    '오레오(OREO)'와 장난스럽고 역동적인 에너지를 가진
-                                    애니메이션 '마다가스카의 펭귄'의 가상 콜라보레이션 광고 영상입니다.
-                                    두 브랜드가 공통으로 가진 유쾌함과 통통 튀는 볼륨감을
-                                    시각적으로 표현하는 것에 초점을 맞추었습니다.
-                                </p>
-
-
-                            </div>
-
-                        </a>
-
-
-
-                        <!-- =================================================
-                             PROJECT 03
-                             YOUTUBE THUMBNAIL
-                             우주떡집
-                        ================================================== -->
-
-                        <div
-                            class="program portfolio-link"
-                            data-category="thumbnail"
-                        >
-
-
-                            <!-- PROJECT THUMBNAIL -->
-
-                            <div class="program-thumbnail">
-
-                                <img
-                                    src="images/유튜브썸네일/썸네일 - 우주떡집 (유튜브 썸네일).png"
-                                    alt="우주떡집 유튜브 썸네일"
-                                >
-
-                            </div>
-
-
-
-                            <!-- PROJECT INFORMATION -->
-
-                            <div class="program-info">
-
-                                <div class="program-meta">
-
-                                    <span>
-                                        YOUTUBE THUMBNAIL
-                                    </span>
-
-                                    <span>
-                                        2026
-                                    </span>
-
-                                </div>
-
-                                <h2>
-                                    TVING <우주떡집> 1화 유튜브 클립영상 썸네일
-                                </h2>
-
-                                <h5>
-                                    PHOTOSHOP
-                                </h5>
-
-
-                                <!-- 원본 영상 링크 -->
-
-                                <p>
-                                    원본 영상 보러가기 :
-                                    <a
-                                        href="https://youtu.be/BiRSi16OpiY?si=bBtukQmoQ7vSN9Dm"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        https://youtu.be/BiRSi16OpiY
-                                    </a>
-                                </p>
-
-                                <br>
-
-
-                                <!-- 프로젝트 설명 -->
-
-                                <p>
-                                    TV 예능 프로그램 <우주떡집> 1화의 ‘메인 셰프 선발전’ 장면을 활용하여 유튜브 클립용 썸네일을 제작했습니다.
-                                    출연진들이 직접 만든 음식을 배경에 배치하고, 선발전에서 보여준 각 인물의 다양한 표정을 활용하여 예능 특유의 재미와 캐릭터성을 표현했습니다.
-                                    또한 해당 선발전에서 사용했던 닉네임을 이름표 형태로 제작하여 인물별 특징이 직관적으로 전달될 수 있도록 구성했습니다.
-                                </p>
-
-                            </div>
-
-
-                        </div>
-
-
-
-                        <!-- =================================================
-                             PROJECT 04
-                             YOUTUBE THUMBNAIL
-                             풍향고2
-                        ================================================== -->
-
-                        <div
-                            class="program portfolio-link"
-                            data-category="thumbnail"
-                        >
-
-
-                            <!-- PROJECT THUMBNAIL -->
-
-                            <div class="program-thumbnail">
-
-                                <img
-                                    src="images/유튜브썸네일/썸네일 - 풍향고2(3화 헝가리 미션 임파서블편).png"
-                                    alt="풍향고2 유튜브 썸네일"
-                                >
-
-                            </div>
-
-
-
-                            <!-- PROJECT INFORMATION -->
-
-                            <div class="program-info">
-
-                                <div class="program-meta">
-
-                                    <span>
-                                        유튜브 <풍향고2> 3화 유튜브 썸네일
-                                    </span>
-
-                                    <span>
-                                        2026.08.15
-                                    </span>
-
-                                </div>
-
-                                <h2>
-                                    유튜브 <풍향고2> 3화 유튜브 썸네일
-                                </h2>
-
-                                <h5>
-                                    PHOTOSHOP
-                                </h5>
-
-
-                                <!-- 원본 영상 링크 -->
-
-                                <p>
-                                    원본 영상 보러가기 :
-                                    <a
-                                        href="https://youtu.be/0RJpkvVJVUE?si=u8Daiyp36TsCJMXg"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        https://youtu.be/0RJpkvVJVUE
-                                    </a>
-                                </p>
-
-                                <br>
-
-
-                                <!-- 프로젝트 설명 -->
-
-                                <p>
-                                    상단 타이틀 ‘헝가리’에는 헝가리 국기를 클리핑 마스크하여 여행지의 특징을 시각적으로 표현하고, 멤버들이 현지에서 먹은 음식과 건물을 배경 이미지로 결합했습니다.
-                                    메인 이미지 외에도 여행 중 범퍼카를 타는 멤버들의 모습을 서브 요소로 배치하여 예능 특유의 유쾌함과 재미를 더했습니다. 
-                                    하단 채널 로고는 채널의 콘셉트에 맞춰 바람에 날리는 구름 캐릭터와 입체적인 타이틀 로고, 교통 표지판 그래픽을 활용해 제작했습니다.
-                                </p>
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-
-
-
-
-
-                         <!-- =================================================
-                             PROJECT 02
-                             MOTION GRAPHIC
-                             모션그래픽
-                        ================================================== -->
-
-                        <!--
-                        <a
-                            href="javascript:void(0);"
-                            class="program portfolio-link"
-                            data-category="motion"
-                        >
-                         -->
-
-                            <!-- PROJECT THUMBNAIL 
-
-                            <div class="program-thumbnail">
-
-                                <h3>
-                                    MOTION
-                                </h3>
-
-                            </div>
-                        -->
-                       
-                            <!-- PROJECT INFORMATION -->
-
-                             <!-- <div class="program-info">
-
-                                <div class="program-meta">
-
-                                    <span>
-                                        MOTION GRAPHIC
-                                    </span>
-
-                                    <span>
-                                        2026
-                                    </span>
-
-                                </div>
-
-                                <h2>
-                                    MOTION GRAPHIC
-                                </h2>
-
-                                <h5>
-                                    AFTER EFFECTS
-                                </h5>
-
-                                <p>
-                                    After Effects를 활용한 타이포그래피 프로젝트
-                                </p>
-
-                            </div>
-                        -->
-
-                            <!-- 추가된 수정 중 오버레이 
-                                <div class="preparing-overlay">
-                                    <span>WORK IN PROGRESS</span>
-                                    <p>추가 예정입니다 :D </p>
-                                </div>
-
-                        </a>
-                        --> 
-
-
-
-
-
-
-
-
-
-                        <!-- =====================================================
-                             ★★★ NEW PROJECT TEMPLATE ★★★
-
-                             새로운 작업물을 추가할 때 사용할 기본 양식입니다.
-
-                             아래 주석 전체를 복사해서 사용하세요.
-
-                             반드시 수정할 항목:
-
-                             ① href
-                                → 작업물 링크
-
-                             ② data-category
-                                → 아래 중 하나 선택
-
-                                commercial
-                                = 제품광고
-
-                                entertainment
-                                = 엔터테인먼트 기획안
-
-                                motion
-                                = 모션그래픽
-
-                                thumbnail
-                                = 유튜브 썸네일
-
-                             ③ 이미지 경로
-                                → images/파일이름.png
-
-                             ④ alt
-                                → 이미지 설명
-
-                             ⑤ 프로젝트 제목
-
-                             ⑥ 사용 프로그램
-
-                             ⑦ 프로젝트 설명
-
-                             ★ 카테고리 자체를 새로 만들 경우에는
-                               왼쪽 PORTFOLIO MENU에도
-                               새로운 CATEGORY 버튼을 추가해야 합니다.
-                        ====================================================== -->
-                        
-
-
-                    <!-- =========================================
-                         EMPTY MESSAGE
-                         선택한 카테고리에 프로젝트가 없을 경우
-                    ========================================== -->
-
-                    <div
-                        class="portfolio-empty"
-                        id="portfolio-empty"
-                        style="display: none;"
-                    >
-
-                        <span>
-                            NO PROGRAM FOUND
-                        </span>
+                        <strong id="project-count">
+                            06
+                        </strong>
 
                     </div>
 
 
                 </div>
-                <!-- END PROJECT AREA -->
+
+
+
+                <!-- =========================================
+                     PROGRAM GRID
+                ========================================== -->
+
+                <div class="program-grid">
+
+
+
+                    <!-- =================================================
+                         PROJECT 01
+                         SEVENTEEN × LOGIN
+                         CONTENT PLANNING
+                    ================================================== -->
+
+                    <a
+                        href="seventeen.html"
+                        class="program portfolio-link"
+                        data-category="planning"
+                    >
+
+                        <div class="program-thumbnail">
+
+                            <img
+                                src="images/seventeen/seventeen_1.png"
+                                alt="SEVENTEEN × LOGIN 콘텐츠 기획안"
+                            >
+
+                        </div>
+
+
+                        <div class="program-info">
+
+                            <div class="program-meta">
+
+                                <span>
+                                    ARTIST VIDEO CONTENT PROPOSAL
+                                </span>
+
+                                <span>
+                                    2026.08.29
+                                </span>
+
+                            </div>
+
+
+                            <h2>
+                                SEVENTEEN × LOGIN
+                            </h2>
+
+
+                            <h5>
+                                CONTENT PLANNING
+                            </h5>
+
+
+                            <p>
+                                SEVENTEEN의 자체 콘텐츠를 RPG 게임의 구조로 재해석한
+                                게이미피케이션 여행 예능 기획안.
+                                멤버들은 하나의 길드가 되어 매회 새로운 파티를 구성하고,
+                                여행 과정에서 퀘스트를 수행해 골드를 획득한다.
+                                획득한 GOLD로 이동, 식사, 숙박 등의 여행 비용을 직접 해결하며,
+                                한정된 자원을 어떻게 벌고 사용할지 멤버 스스로 선택한다.
+                                회차별 GOLD의 일부는 길드금고에 누적되어 시즌 전체의 자산으로 이어지며,
+                                누적되는 골드와 선택의 결과가 다음 이야기를 만들어가는 구조를 설계했다.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+
+
+                    <!-- =================================================
+                         PROJECT 02
+                         멍멍! 안녕!
+                         CONTENT PLANNING
+                    ================================================== -->
+
+                    <a
+                        href="shelter-proposal.html"
+                        class="program portfolio-link"
+                        data-category="planning"
+                    >
+
+                        <div class="program-thumbnail">
+
+                            <img
+                                src="images/멍멍안녕/멍멍! 안녕! 타이틀 로고.png"
+                                alt="멍멍! 안녕! 콘텐츠 기획안"
+                            >
+
+                        </div>
+
+
+                        <div class="program-info">
+
+                            <div class="program-meta">
+
+                                <span>
+                                    OBSERVATIONAL REALITY SHOW
+                                </span>
+
+                                <span>
+                                    2026.08.30
+                                </span>
+
+                            </div>
+
+
+                            <h2>
+                                멍멍! 안녕!
+                            </h2>
+
+
+                            <h5>
+                                CONTENT PLANNING
+                            </h5>
+
+
+                            <p>
+                                여성 연예인 4인이 유기견 보호소에서 10일간 밀착 상주하며
+                                현장 봉사와 공동생활을 펼치는 관찰형 리얼리티 예능 기획안.
+                                베테랑 봉사자와 비반려인 초보 일꾼이 함께 성장해 나가는 진솔한 서사와 함께
+                                10일간의 회차별 로드맵 및 비주얼 스토리보드를 종합적으로 구축했다.
+                                단순한 봉사나 감동 소구를 넘어,
+                                우리가 동물을 바라보는 방식의 변화를 보여주는 입체적인 서사를 설계했다.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+
+
+                    <!-- =================================================
+                         PROJECT 03
+                         DEX 101
+                         FIREFIGHTER TRAILER
+                         VIDEO EDITING
+                    ================================================== -->
+
+                    <div
+                        class="program portfolio-link"
+                        data-category="editing"
+                    >
+
+                        <!-- PROJECT THUMBNAIL (링크 적용) -->
+                        <a
+                            href="https://youtu.be/-tFOrcth-RA"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="program-thumbnail youtube-thumbnail"
+                            style="display: block; text-decoration: none;"
+                        >
+                            <img
+                                src="images/예고편 썸네일/예고편 썸네일 - 덱스101 소방관이 된 김진영의 하루.png"
+                                alt="덱스101 소방관이 된 김진영의 하루 예고편"
+                            >
+
+                            <span class="youtube-play-button">
+                                ▶
+                            </span>
+                        </a>
+
+
+                        <!-- PROJECT INFORMATION -->
+
+                        <div class="program-info">
+
+
+                            <div class="program-meta">
+
+                                <span>
+                                    TRAILER RE-EDIT
+                                </span>
+
+                                <span>
+                                    2026.08.31
+                                </span>
+
+                            </div>
+
+
+                            <h2>
+                                덱스101 - 소방관이 된 김진영의 하루
+                            </h2>
+
+
+                            <h5>
+                                PREMIERE PRO
+                            </h5>
+
+
+                            <p>
+                                원본 영상 보러가기 :
+                                <a
+                                    href="https://youtu.be/3ZjyvoojRg4"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    YouTube
+                                </a>
+                            </p>
+
+
+                            <br>
+
+
+                            <p>
+                                약 1시간 분량의 본편 영상에서 긴박한 순간과 인상적인 장면을 선별하여
+                                30초 예고편으로 재구성했습니다.
+                                소방관 체험 과정에서 발생하는 긴장감 있는 상황을 중심으로 컷을 배치하고,
+                                박진감 있는 BGM과 장면 전환을 결합하여
+                                짧은 시간 안에 본편에 대한 궁금증과 몰입을 유도하도록 편집했습니다.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <!-- =================================================
+                         PROJECT 04
+                         OREO X PENGUINS OF MADAGASCAR
+                         MOTION GRAPHIC
+                    ================================================== -->
+
+                    <a
+                        href="https://youtu.be/2IPMO3kLLzk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="program portfolio-link"
+                        data-category="motion"
+                    >
+
+                        <!-- PROJECT THUMBNAIL -->
+
+                        <div class="program-thumbnail youtube-thumbnail">
+
+                            <img
+                                src="images/제품광고/썸네일 - 오레오x마다가스크르의펭귄.png"
+                                alt="OREO X PENGUINS OF MADAGASCAR 광고 영상"
+                            >
+
+                            <span class="youtube-play-button">
+                                ▶
+                            </span>
+
+                      </div>
+
+
+                      <!-- PROJECT INFORMATION -->
+
+                      <div class="program-info">
+
+
+                          <div class="program-meta">
+
+                              <span>
+                                  PRODUCT COMMERCIAL
+                              </span>
+
+                              <span>
+                                  2026.08.26 ~ 2026.08.27
+                              </span>
+
+                        </div>
+
+
+                        <h2>
+                            OREO X PENGUINS OF MADAGASCAR
+                </h2>
+
+
+                        <h5>
+                            PHOTOSHOP / AFTER EFFECTS
+                </h5>
+
+
+                        <p>
+                            전 세계인에게 달콤한 즐거움을 주는 샌드위치 쿠키 브랜드
+                            '오레오(OREO)'와 장난스럽고 역동적인 에너지를 가진
+                            애니메이션 '마다가스카의 펭귄'의 가상 콜라보레이션 광고 영상입니다.
+                            두 브랜드가 공통으로 가진 유쾌함과 통통 튀는 볼륨감을
+                            시각적으로 표현하는 것에 초점을 맞추었습니다.
+                        </p>
+
+
+                  </div>
+
+            </a>
+
+
+
+
+
+                    <!-- =================================================
+                         PROJECT 05
+                         우주떡집
+                         2D DESIGN
+                    ================================================== -->
+
+                    <div
+                        class="program portfolio-link"
+                        data-category="design"
+                    >
+
+                        <div class="program-thumbnail">
+
+                            <img
+                                src="images/유튜브썸네일/썸네일 - 우주떡집 (유튜브 썸네일).png"
+                                alt="우주떡집 유튜브 썸네일"
+                            >
+
+                        </div>
+
+
+                        <div class="program-info">
+
+
+                            <div class="program-meta">
+
+                                <span>
+                                    YOUTUBE THUMBNAIL
+                                </span>
+
+                                <span>
+                                    2026.07
+                                </span>
+
+                            </div>
+
+
+                            <h2>
+                                TVING &lt;우주떡집&gt; 1화 유튜브 클립영상 썸네일
+                            </h2>
+
+
+                            <h5>
+                                PHOTOSHOP
+                            </h5>
+
+
+                            <p>
+                                원본 영상 보러가기 :
+                                <a
+                                    href="https://youtu.be/BiRSi16OpiY"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    YouTube
+                                </a>
+                            </p>
+
+
+                            <br>
+
+
+                            <p>
+                                TV 예능 프로그램 &lt;우주떡집&gt; 1화의
+                                ‘메인 셰프 선발전’ 장면을 활용하여 유튜브 클립용 썸네일을 제작했습니다.
+                                출연진들이 직접 만든 음식을 배경에 배치하고,
+                                선발전에서 보여준 다양한 표정을 활용하여
+                                예능 특유의 재미와 캐릭터성을 표현했습니다.
+                                또한 해당 선발전에서 사용했던 닉네임을 이름표 형태로 제작하여
+                                인물별 특징이 직관적으로 전달될 수 있도록 구성했습니다.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <!-- =================================================
+                         PROJECT 06
+                         풍향고2
+                         2D DESIGN
+                    ================================================== -->
+
+                    <div
+                        class="program portfolio-link"
+                        data-category="design"
+                    >
+
+                        <div class="program-thumbnail">
+
+                            <img
+                                src="images/유튜브썸네일/썸네일 - 풍향고2(3화 헝가리 미션 임파서블편).png"
+                                alt="풍향고2 유튜브 썸네일"
+                            >
+
+                        </div>
+
+
+                        <div class="program-info">
+
+
+                            <div class="program-meta">
+
+                                <span>
+                                    YOUTUBE THUMBNAIL
+                                </span>
+
+                                <span>
+                                    2026.08.15
+                                </span>
+
+                            </div>
+
+
+                            <h2>
+                                유튜브 &lt;풍향고2&gt; 3화 유튜브 썸네일
+                            </h2>
+
+
+                            <h5>
+                                PHOTOSHOP
+                            </h5>
+
+
+                            <p>
+                                원본 영상 보러가기 :
+                                <a
+                                    href="https://youtu.be/0RJpkvVJVUE"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    YouTube
+                                </a>
+                            </p>
+
+
+                            <br>
+
+
+                            <p>
+                                상단 타이틀 ‘헝가리’에는 헝가리 국기를 클리핑 마스크하여
+                                여행지의 특징을 시각적으로 표현하고,
+                                멤버들이 현지에서 먹은 음식과 건물을 배경 이미지로 결합했습니다.
+                                메인 이미지 외에도 여행 중 범퍼카를 타는 멤버들의 모습을
+                                서브 요소로 배치하여 예능 특유의 유쾌함과 재미를 더했습니다.
+                                하단 채널 로고는 채널의 콘셉트에 맞춰
+                                구름 캐릭터와 입체적인 타이틀 로고,
+                                교통 표지판 그래픽을 활용해 제작했습니다.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- END PROGRAM GRID -->
+
+
+
+                <!-- =========================================
+                     EMPTY MESSAGE
+                ========================================== -->
+
+                <div
+                    class="portfolio-empty"
+                    id="portfolio-empty"
+                    style="display: none;"
+                >
+
+                    <span>
+                        NO PROGRAM FOUND
+                    </span>
+
+                </div>
 
 
             </div>
-            <!-- END PORTFOLIO LAYOUT -->
+            <!-- END PROJECT AREA -->
 
 
         </div>
-        <!-- END PORTFOLIO WRAPPER -->
+        <!-- END PORTFOLIO LAYOUT -->
 
 
-    </section>
-    <!-- END PORTFOLIO SECTION -->
+    </div>
+    <!-- END PORTFOLIO WRAPPER -->
 
 
-
-    <!-- =========================================
-         JAVASCRIPT
-         포트폴리오 카테고리 필터 기능
-
-         ★ 프로젝트를 추가/삭제할 때
-         이 부분은 수정하지 않아도 됩니다.
-    ========================================== -->
-
-    <script>
-
-
-        /* =========================================
-           DOM CONTENT LOADED
-           HTML 문서가 모두 로드된 후 실행
-        ========================================== */
-
-        document.addEventListener('DOMContentLoaded', () => {
-
-
-            /* -----------------------------------------
-               ELEMENT SELECT
-               필요한 HTML 요소 가져오기
-            ------------------------------------------ */
-
-            const categoryButtons =
-                document.querySelectorAll('.portfolio-category');
-
-            const projectItems =
-                document.querySelectorAll('.program-grid .program');
-
-            const projectCountElement =
-                document.getElementById('project-count');
-
-            const currentLabelElement =
-                document.querySelector('.portfolio-current-label');
-
-            const currentTitleElement =
-                document.querySelector('.portfolio-current-title');
-
-            const emptyMessage =
-                document.getElementById('portfolio-empty');
+</section>
 
 
 
-            /* =========================================
-               CATEGORY BUTTON EVENT
-               카테고리 버튼 클릭 기능
-            ========================================== */
+<!-- =========================================
+     JAVASCRIPT
+     CATEGORY FILTER
+========================================== -->
 
-            categoryButtons.forEach(button => {
+<script>
 
-                button.addEventListener('click', () => {
-
-
-                    /* -----------------------------------------
-                       1. ACTIVE CLASS 변경
-                       현재 선택한 메뉴 활성화
-                    ------------------------------------------ */
-
-                    categoryButtons.forEach(btn =>
-                        btn.classList.remove('active')
-                    );
-
-                    button.classList.add('active');
+    document.addEventListener('DOMContentLoaded', () => {
 
 
+        const categoryButtons =
+            document.querySelectorAll('.portfolio-category');
 
-                    /* -----------------------------------------
-                       2. 선택한 CATEGORY 정보 가져오기
-                    ------------------------------------------ */
+        const projectItems =
+            document.querySelectorAll('.program-grid .program');
 
-                    const selectedCategory =
-                        button.getAttribute('data-category');
+        const projectCountElement =
+            document.getElementById('project-count');
 
-                    const categoryName =
-                        button
-                            .querySelector('.category-name')
-                            .innerText
-                            .replace(/\n/g, ' ');
+        const currentLabelElement =
+            document.querySelector('.portfolio-current-label');
+
+        const currentTitleElement =
+            document.querySelector('.portfolio-current-title');
+
+        const emptyMessage =
+            document.getElementById('portfolio-empty');
 
 
 
-                    /* -----------------------------------------
-                       3. 상단 텍스트 변경
-                    ------------------------------------------ */
-
-                    if (currentLabelElement) {
-
-                        currentLabelElement.textContent =
-                            `PROGRAM / ${selectedCategory.toUpperCase()}`;
-
-                    }
+        categoryButtons.forEach(button => {
 
 
-                    if (currentTitleElement) {
+            button.addEventListener('click', () => {
 
-                        currentTitleElement.textContent =
-                            selectedCategory === 'all'
-                                ? 'ALL PROJECTS'
-                                : categoryName;
 
-                    }
+                /* -----------------------------------------
+                   ACTIVE CATEGORY
+                ------------------------------------------ */
+
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                button.classList.add('active');
 
 
 
-                    /* -----------------------------------------
-                       4. PROJECT FILTERING
-                       선택한 카테고리만 화면에 표시
-                    ------------------------------------------ */
+                /* -----------------------------------------
+                   CATEGORY DATA
+                ------------------------------------------ */
 
-                    let visibleCount = 0;
+                const selectedCategory =
+                    button.getAttribute('data-category');
 
-
-                    projectItems.forEach(item => {
-
-                        const itemCategory =
-                            item.getAttribute('data-category');
-
-
-                        if (
-                            selectedCategory === 'all' ||
-                            itemCategory === selectedCategory
-                        ) {
-
-                            item.style.display = '';
-                            visibleCount++;
-
-                        } else {
-
-                            item.style.display = 'none';
-
-                        }
-
-                    });
+                const categoryName =
+                    button
+                        .querySelector('.category-name')
+                        .innerText
+                        .replace(/\n/g, ' ')
+                        .trim();
 
 
 
-                    /* -----------------------------------------
-                       5. PROJECT COUNT 변경
-                       현재 표시되는 프로젝트 개수 자동 계산
+                /* -----------------------------------------
+                   HEADER TEXT
+                ------------------------------------------ */
 
-                       예:
-                       ALL          → 05
-                       제품광고      → 01
-                       모션그래픽     → 01
-                       유튜브 썸네일  → 02
-                       엔터테인먼트   → 01
-                    ------------------------------------------ */
+                if (currentLabelElement) {
 
-                    if (projectCountElement) {
+                    currentLabelElement.textContent =
+                        `PROGRAM / ${selectedCategory.toUpperCase()}`;
 
-                        projectCountElement.textContent =
-                            String(visibleCount).padStart(2, '0');
+                }
+
+
+                if (currentTitleElement) {
+
+                    currentTitleElement.textContent =
+                        selectedCategory === 'all'
+                            ? 'ALL PROJECTS'
+                            : categoryName;
+
+                }
+
+
+
+                /* -----------------------------------------
+                   PROJECT FILTER
+                ------------------------------------------ */
+
+                let visibleCount = 0;
+
+
+                projectItems.forEach(item => {
+
+
+                    const itemCategory =
+                        item.getAttribute('data-category');
+
+
+                    if (
+                        selectedCategory === 'all' ||
+                        itemCategory === selectedCategory
+                    ) {
+
+                        item.style.display = '';
+
+                        visibleCount++;
+
+                    } else {
+
+                        item.style.display = 'none';
 
                     }
-
-
-
-                    /* -----------------------------------------
-                       6. EMPTY MESSAGE
-                       프로젝트가 없을 경우 안내 문구 표시
-                    ------------------------------------------ */
-
-                    if (emptyMessage) {
-
-                        emptyMessage.style.display =
-                            visibleCount === 0
-                                ? 'block'
-                                : 'none';
-
-                    }
-
 
                 });
 
-            });
 
+
+                /* -----------------------------------------
+                   PROJECT COUNT
+                ------------------------------------------ */
+
+                if (projectCountElement) {
+
+                    projectCountElement.textContent =
+                        String(visibleCount).padStart(2, '0');
+
+                }
+
+
+
+                /* -----------------------------------------
+                   EMPTY MESSAGE
+                ------------------------------------------ */
+
+                if (emptyMessage) {
+
+                    emptyMessage.style.display =
+                        visibleCount === 0
+                            ? 'block'
+                            : 'none';
+
+                }
+
+            });
 
         });
 
-    </script>
-    
-    <!-- =========================================
-         FOOTER
-    ========================================= -->
+    });
 
-    <footer>
-        <span>© 2026 JY BROADCAST PORTFOLIO</span>
-        <span>VIDEO CONTENT / ASSISTANT DIRECTOR</span>
-    </footer>
+</script>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================== -->
+
+<footer>
+
+    <span>
+        © 2026 JY BROADCAST PORTFOLIO
+    </span>
+
+    <span>
+        VIDEO CONTENT / ASSISTANT DIRECTOR
+    </span>
+
+</footer>
+
 
 </body>
+
 </html>
