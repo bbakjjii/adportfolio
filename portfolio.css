@@ -1,8 +1,16 @@
 /* =========================================================
    PORTFOLIO.CSS
    JY BROADCAST - PORTFOLIO
+
    portfolio.html 전용 스타일
-   - 포트폴리오 메뉴 / 프로젝트 그리드 / 프로그램 카드 / 슬라이더
+
+   카테고리
+   01 ALL
+   02 콘텐츠 기획
+   03 영상 편집
+   04 모션그래픽
+   05 2D 디자인
+
    ※ header/nav/footer/section 공통 스타일은 common.css 참고
 ========================================================= */
 
@@ -12,13 +20,16 @@
 ========================================================= */
 
 #portfolio {
+
     background: #101114;
+
 }
 
 .portfolio-wrapper {
-    max-width: 1250px;
 
+    max-width: 1250px;
     margin: auto;
+
 }
 
 
@@ -27,6 +38,7 @@
 ========================================================= */
 
 .portfolio-layout {
+
     display: grid;
 
     grid-template-columns:
@@ -36,6 +48,7 @@
     align-items: start;
 
     gap: 40px;
+
 }
 
 
@@ -44,6 +57,7 @@
 ========================================================= */
 
 .portfolio-menu {
+
     position: sticky;
 
     top: 100px;
@@ -51,10 +65,14 @@
     border: 1px solid #333;
 
     background: #15171b;
+
 }
 
+
 .portfolio-menu-header {
+
     display: flex;
+
     justify-content: space-between;
 
     padding: 18px 20px;
@@ -66,6 +84,7 @@
     letter-spacing: 1.5px;
 
     color: #666;
+
 }
 
 
@@ -74,6 +93,7 @@
 ========================================================= */
 
 .portfolio-category {
+
     width: 100%;
 
     min-height: 65px;
@@ -108,42 +128,58 @@
         background 0.25s ease,
         color 0.25s ease,
         padding-left 0.25s ease;
+
 }
+
 
 .portfolio-category:hover {
+
     padding-left: 25px;
 
     background: #1c1e23;
 
     color: #fff;
+
 }
+
 
 .portfolio-category.active {
+
     padding-left: 25px;
 
     background: #1c1e23;
 
     color: #fff;
+
 }
 
+
 .category-number {
+
     font-size: 9px;
 
     letter-spacing: 1px;
 
     color: #555;
+
 }
+
 
 .portfolio-category.active .category-number {
+
     color: #aaa;
+
 }
 
+
 .category-name {
+
     font-size: 12px;
 
     line-height: 1.5;
 
     letter-spacing: 0.5px;
+
 }
 
 
@@ -152,7 +188,9 @@
 ========================================================= */
 
 .portfolio-menu-footer {
+
     display: flex;
+
     justify-content: space-between;
 
     padding: 15px 20px;
@@ -162,6 +200,7 @@
     letter-spacing: 1px;
 
     color: #444;
+
 }
 
 
@@ -170,7 +209,9 @@
 ========================================================= */
 
 .portfolio-project-area {
+
     min-width: 0;
+
 }
 
 
@@ -179,8 +220,11 @@
 ========================================================= */
 
 .portfolio-project-header {
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-end;
 
     margin-bottom: 25px;
@@ -188,9 +232,12 @@
     padding-bottom: 18px;
 
     border-bottom: 1px solid #333;
+
 }
 
+
 .portfolio-current-label {
+
     display: block;
 
     margin-bottom: 8px;
@@ -200,18 +247,25 @@
     letter-spacing: 2px;
 
     color: #666;
+
 }
 
+
 .portfolio-current-title {
+
     margin: 0;
 
     font-size: 27px;
 
     letter-spacing: 1px;
+
 }
 
+
 .portfolio-project-count {
+
     display: flex;
+
     align-items: center;
 
     gap: 10px;
@@ -221,14 +275,18 @@
     letter-spacing: 1px;
 
     color: #555;
+
 }
 
+
 .portfolio-project-count strong {
+
     font-size: 18px;
 
     font-weight: 500;
 
     color: #eee;
+
 }
 
 
@@ -237,15 +295,19 @@
 ========================================================= */
 
 .program-grid {
+
     display: grid;
 
     grid-template-columns:
         repeat(2, 1fr);
 
     gap: 22px;
+
 }
 
+
 .program {
+
     position: relative;
 
     display: block;
@@ -256,22 +318,33 @@
 
     background: #181a1e;
 
+    color: inherit;
+
+    text-decoration: none;
+
     cursor: pointer;
 
     transition:
         transform 0.3s ease,
         border-color 0.3s ease,
         opacity 0.3s ease;
+
 }
 
+
 .program:hover {
+
     transform: translateY(-5px);
 
     border-color: #777;
+
 }
 
+
 .program.hidden {
+
     display: none;
+
 }
 
 
@@ -280,6 +353,7 @@
 ========================================================= */
 
 .portfolio-empty {
+
     display: none;
 
     padding: 70px 20px;
@@ -293,24 +367,31 @@
     letter-spacing: 2px;
 
     color: #555;
+
 }
 
+
 .portfolio-empty.show {
+
     display: block;
+
 }
 
 
 /* =========================================================
-   23. PORTFOLIO THUMBNAIL
+   23. PROGRAM THUMBNAIL
 ========================================================= */
 
 .program-thumbnail {
+
     position: relative;
 
     aspect-ratio: 16 / 9;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     overflow: hidden;
@@ -321,9 +402,12 @@
             #30333a,
             #15171b
         );
+
 }
 
+
 .program-thumbnail::before {
+
     content: "";
 
     position: absolute;
@@ -342,9 +426,12 @@
     pointer-events: none;
 
     z-index: 3;
+
 }
 
+
 .program-thumbnail h3 {
+
     position: relative;
 
     z-index: 4;
@@ -352,85 +439,78 @@
     font-size: 40px;
 
     letter-spacing: 3px;
+
 }
 
 
 /* =========================================================
-   24. PREPARING OVERLAY
+   24. VIDEO / YOUTUBE THUMBNAIL
+   영상 편집 작업물용
+
+   모든 영상 작업물은 YouTube 링크를 사용하므로
+   카드 이미지 위에 재생 버튼을 표시합니다.
 ========================================================= */
 
-.preparing-overlay {
+.video-thumbnail img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.video-thumbnail::after {
+
+    content: "";
+
     position: absolute;
 
     inset: 0;
 
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-
-    background-color: rgba(0, 0, 0, 0.65);
-
-    color: #fff;
-
-    text-align: center;
+    background:
+        rgba(0, 0, 0, 0);
 
     pointer-events: none;
 
-    z-index: 10;
+    z-index: 3;
+
+    transition:
+        background 0.25s ease;
+
 }
 
-.preparing-overlay span {
-    margin-bottom: 6px;
 
-    font-size: 14px;
+.video-thumbnail:hover::after {
 
-    font-weight: 700;
+    background:
+        rgba(0, 0, 0, 0.15);
 
-    letter-spacing: 2px;
-
-    color: #ffc107;
-
-    text-transform: uppercase;
-}
-
-.preparing-overlay p {
-    margin: 0;
-
-    font-size: 18px;
-
-    font-weight: 600;
-
-    color: #fff;
 }
 
 
 /* =========================================================
-   25. YOUTUBE THUMBNAIL
+   25. YOUTUBE PLAY BUTTON
 ========================================================= */
 
-.youtube-thumbnail img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-}
-
 .youtube-play-button {
+
     position: absolute;
 
     top: 50%;
+
     left: 50%;
 
     width: 68px;
+
     height: 48px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     transform:
@@ -445,56 +525,110 @@
 
     font-size: 21px;
 
+    line-height: 1;
+
     z-index: 5;
 
     transition:
         transform 0.25s ease,
         background 0.25s ease;
+
 }
 
-.youtube-thumbnail:hover .youtube-play-button {
+
+.video-thumbnail:hover .youtube-play-button {
+
     transform:
         translate(-50%, -50%)
         scale(1.1);
 
     background:
         rgba(0, 0, 0, 0.9);
+
 }
 
-.youtube-thumbnail::after {
-    content: "";
+
+/* =========================================================
+   26. PREPARING OVERLAY
+========================================================= */
+
+.preparing-overlay {
 
     position: absolute;
 
     inset: 0;
 
-    background:
-        rgba(0, 0, 0, 0);
+    display: flex;
 
-    transition: 0.25s;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background-color:
+        rgba(0, 0, 0, 0.65);
+
+    color: #fff;
+
+    text-align: center;
 
     pointer-events: none;
 
-    z-index: 3;
+    z-index: 10;
+
 }
 
-.youtube-thumbnail:hover::after {
-    background:
-        rgba(0, 0, 0, 0.12);
+
+.preparing-overlay span {
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #ffc107;
+
+    text-transform: uppercase;
+
+}
+
+
+.preparing-overlay p {
+
+    margin: 0;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #fff;
+
 }
 
 
 /* =========================================================
-   26. PROGRAM INFO
+   27. PROGRAM INFO
 ========================================================= */
 
 .program-info {
+
     padding: 20px;
+
     border-top: 1px solid #333;
+
 }
 
+
 .program-meta {
+
     display: flex;
+
     justify-content: space-between;
 
     gap: 20px;
@@ -504,17 +638,23 @@
     font-size: 9px;
 
     color: #666;
+
 }
 
+
 .program-info h2 {
+
     margin-bottom: 7px;
 
     font-size: 20px;
 
     line-height: 1.4;
+
 }
 
+
 .program-info h5 {
+
     margin-bottom: 12px;
 
     font-size: 10px;
@@ -524,32 +664,43 @@
     letter-spacing: 1px;
 
     color: #777;
+
 }
 
+
 .program-info p {
+
     font-size: 12px;
 
     line-height: 1.7;
 
     color: #777;
+
 }
 
+
 .program-info a {
+
     color: #007bff;
 
     text-decoration: underline;
+
 }
 
+
 .program-info a:hover {
+
     color: #0056b3;
+
 }
 
 
 /* =========================================================
-   27. PORTFOLIO SLIDER
+   28. PORTFOLIO SLIDER
 ========================================================= */
 
 .portfolio-slider {
+
     position: relative;
 
     width: 100%;
@@ -557,14 +708,18 @@
     aspect-ratio: 16 / 9;
 
     overflow: hidden;
+
 }
 
+
 .portfolio-slide {
+
     position: absolute;
 
     inset: 0;
 
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -577,31 +732,39 @@
 
     transition:
         opacity 0.35s ease;
+
 }
 
+
 .portfolio-slide.active {
+
     opacity: 1;
 
     pointer-events: auto;
 
     z-index: 2;
+
 }
 
 
 /* =========================================================
-   28. SLIDER ARROW
+   29. SLIDER ARROW
 ========================================================= */
 
 .slider-arrow {
+
     position: absolute;
 
     top: 50%;
 
     width: 42px;
+
     height: 42px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     transform:
@@ -633,36 +796,51 @@
         opacity 0.25s,
         background 0.25s,
         border-color 0.25s;
+
 }
+
 
 .portfolio-slider:hover .slider-arrow {
+
     opacity: 1;
+
 }
+
 
 .slider-prev {
+
     left: 15px;
+
 }
+
 
 .slider-next {
+
     right: 15px;
+
 }
 
+
 .slider-arrow:hover {
+
     background:
         rgba(255, 255, 255, 0.15);
 
     border-color: #aaa;
+
 }
 
 
 /* =========================================================
-   29. SLIDER COUNTER
+   30. SLIDER COUNTER
 ========================================================= */
 
 .slider-counter {
+
     position: absolute;
 
     right: 15px;
+
     bottom: 12px;
 
     padding: 5px 8px;
@@ -680,46 +858,65 @@
     color: #aaa;
 
     z-index: 10;
+
 }
+
 
 .current-slide {
+
     color: #fff;
+
 }
 
+
 .counter-divider {
+
     margin:
         0 2px;
+
 }
 
 
 /* =========================================================
-   TABLET RESPONSIVE (max-width: 900px)
+   TABLET RESPONSIVE
+   max-width: 900px
 ========================================================= */
 
 @media (max-width: 900px) {
 
+
     .portfolio-layout {
+
         grid-template-columns:
             1fr;
 
         gap: 25px;
+
     }
 
+
     .portfolio-menu {
+
         position: static;
 
         display: grid;
 
         grid-template-columns:
             repeat(5, 1fr);
+
     }
+
 
     .portfolio-menu-header,
     .portfolio-menu-footer {
+
         display: none;
+
     }
 
+
     .portfolio-category {
+
         min-height: 65px;
 
         display: flex;
@@ -727,6 +924,7 @@
         flex-direction: column;
 
         align-items: center;
+
         justify-content: center;
 
         gap: 5px;
@@ -739,84 +937,123 @@
         border-bottom: none;
 
         text-align: center;
+
     }
+
 
     .portfolio-category:hover,
     .portfolio-category.active {
+
         padding-left: 10px;
+
     }
 
+
     .category-name {
+
         font-size: 10px;
 
         text-align: center;
+
     }
+
 
     .category-number {
+
         font-size: 8px;
+
     }
 
+
     .program-grid {
+
         grid-template-columns:
             1fr;
+
     }
 
 }
 
 
 /* =========================================================
-   SMALL MOBILE RESPONSIVE (max-width: 600px)
+   SMALL MOBILE RESPONSIVE
+   max-width: 600px
 ========================================================= */
 
 @media (max-width: 600px) {
 
-    /* PROGRAM */
 
     .program-info {
+
         padding: 18px;
+
     }
+
 
     .program-info h2 {
+
         font-size: 17px;
+
     }
+
 
     .program-meta {
+
         font-size: 8px;
+
     }
 
 
-    /* PORTFOLIO MENU */
-
     .portfolio-category {
+
         min-height: 58px;
 
         padding:
             7px 3px;
+
     }
+
 
     .portfolio-category:hover,
     .portfolio-category.active {
+
         padding-left: 3px;
+
     }
+
 
     .category-name {
+
         font-size: 8px;
+
     }
+
 
     .portfolio-current-label {
+
         font-size: 8px;
+
     }
+
 
     .portfolio-current-title {
+
         font-size: 19px;
+
     }
+
 
     .portfolio-project-count {
+
         gap: 5px;
+
     }
 
+
     .portfolio-project-count strong {
+
         font-size: 15px;
+
     }
 
 }
